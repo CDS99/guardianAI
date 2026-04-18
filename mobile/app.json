@@ -14,16 +14,28 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.guardianai.theurbe"
+      "bundleIdentifier": "com.guardianai.theurbe",
+      "buildNumber": "1",
+      "appleTeamId": "JT4R2UQWM5",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Guardian usa la tua posizione per mostrarti le segnalazioni nel tuo quartiere e centrare la mappa dove ti trovi.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Guardian può inviare la tua posizione ai contatti fidati durante un SOS attivo e avvisarti quando rientri nelle zone salvate.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.guardianai.theurbe",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#7C3AED"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
